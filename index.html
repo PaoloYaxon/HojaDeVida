@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Paolo Yaxón CV</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <section id="home">
+        <nav>
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">LOGIN</a></li>
+            </ul>
+            <input type="text" placeholder="Buscar">
+        </nav>
+        <div class="fila">
+            <div class="col">
+                <h2>Bienvenido</h2>
+                <h1 class="normal" size="7">Hoja de vida Paolo Yaxón</h1> <br>
+                <h3 size="4">Desarrollador Junior y Técnico en sistemas</h3><br>
+            
+                <p><div>
+                    · Conocimientos: <br><br>
+                    - Páginas web Html, Css y JavaScript <br>
+                    - Web API REST con .Net Core Swagger <br>
+                    - .NET Asp y Core<br>
+                    - Implementación de servicios JWT<br>
+                    - Programación y diseño para dispositivos móviles en Xamarin Forms y Xaml para 
+                    &nbsp;&nbsp;plataformas IOS, Android<br>
+                    - SQL SERVER CRUD con informaciones en tablas <br>
+                    - Uso de Procedimientos almacenados <br>
+                    - Uso Intermedio Transact SQL<br>
+                    - Uso de GitHub<br>
+                </div>
+                </p>
+                <button><a style="color: white;" href="CV.pdf" download="CV Paolo Yaxón.pdf">Descargar CV PDF</a></button><br><br>
+                <div class="figura1">
+                    <img src="img/codigo-removebg-preview.png" alt="" width="220"> 
+                </div>
+                <div class="figura3">
+                    <img src="img/desarrollo.png" alt="" width="360">
+                </div>
+            </div>
+            <div class="col">
+                <div class="figura2">
+                    <img src="img/tecnologia.png" alt="20" width="220">
+                </div>
+                <div class="nave">
+                    <img src="img/sistemas.png" alt="" width="220">
+                </div>
+                <div class="compu">
+                    <img src="img/compu.png" alt="">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="item i1" onclick="mostrar1()">
+                <i class="fa-solid fa-note-sticky"></i>
+                <div class="info">
+                    <h3>Experiencia Laboral</h3>
+                </div>
+            </div>
+            <div class="item i2" onclick="mostrar2()">
+                <i class="fa-solid fa-note-sticky"></i>
+                <div class="info">
+                    <h3>Formacion Académica</h3>
+                </div>
+            </div>
+            <div class="item i3" onclick="mostrar3()">
+                <i class="fa-brands fa-font-awesome"></i>
+                <div class="info">
+                    <h3>Contacto</h3>
+                </div>
+            </div>
+        </footer>
+        
+       <div id="item1">
+        <img src="img/mifoto-remove.png" alt="">
+            <div class="info">
+                <h3>Experiencia Laboral</h3>
+                <p>2013-2017 Técnico en Sistemas, Fudanción Familia Maya  </p>
+                <p>2016-2018 Técnico en Sistemas, Asociación Coindi y Centro de Convenciones Ixchel 
+                    · Trabajo dando soporte técnico a todo el personal y oficinas de la Asociación.</p>
+                 <p>2016-2017 Representante de Servicio al Cliente, Banco Industrial, S.A.  </p>
+                <p> 2017-2021 Hotel Atitlán</p>
+                <p>2021-2021 Área de Informática, Cooperativa Concepción, R.L. </p>
+                <p>2021-2023 Auxiliar de Sistemas y Desarrollador Junior Cooperativa Intercop, R.L. </p>
+            </div>
+            <div class="close" onclick="cerrar()">
+                &#x2715
+            </div>
+       </div>
+       <div id="item2">
+            <i class="fa-solid fa-note-sticky"></i>
+            <div class="info">
+                <p>2013-2016 Sexto Semestre en Ingeniería en Sistemas, Universidad Mariano Gálvez. </p>
+                <p>2011-2012 Bachiller en Computación con Orientación Científica, Escuela en Ciencias de la Computación. </p>
+                <p>2008-2010 Nivel Básico, Escuela Normal Privada Sololá. </p>
+                <p>2000-2007 Nivel Primario, Escuela Tipo Federación Ralón C. </p>
+            </div>
+            <div class="close" onclick="cerrar()">
+                &#x2715
+            </div>
+        </div>
+        <div id="item3">
+            <i class="fa-brands fa-font-awesome"></i>
+            <div class="info">
+                <h3>Contactame:</h3> <br><br>
+                <h3>Nombre: Paolo Enrique Yaxón Pocop</h3><br>
+                <h3>Fecha de nacimineto: 04/05/1995 </h3><br>
+                <h3>Licencias de conducir: Tipo M y C</h3><br>
+                <h3>Correo: paoloyaxon@gmail.com</h3><br>
+                <h3>Residencia: Departamento Sololá, Guatemala</h3><br>
+            </div>
+            <div class="close" onclick="cerrar()">
+                &#x2715
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function mostrar1(){
+            document.getElementById('item1').style.left = '0';
+        }
+        function mostrar2(){
+            document.getElementById('item2').style.left = '0';
+        }
+        function mostrar3(){
+            document.getElementById('item3').style.left = '0';
+        }
+        function cerrar(){
+            document.getElementById('item1').style.left = '-100%';
+            document.getElementById('item2').style.left = '-100%';
+            document.getElementById('item3').style.left = '-100%';
+        }
+    </script>
+</html>
